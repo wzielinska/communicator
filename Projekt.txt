@@ -1,0 +1,4 @@
+Jezyk wybrany przeze mnie to C#.
+Moim aktualnym planem jest napisanie servera do ogarniecia komunikacji pomiedzy klientami, który bedzie zwyklym konsolowym programem przechowujacym dane na temat uzytkowników i bedzie ich uwierzytelnial. 
+Nastepnie chcialbym napisac klienta na poczatku wykorzystujac WPF, ale docelowo chcialbym napisac to w Xamarinie, poniewaz ciekawi mnie temat multiplatformowosci i w ten sposób móglbym nieco poprawic swoje umiejetnosci w tym kierunku.
+Wczoraj caly dzien przygotowywalem stanowisko laboratoryjne, dlatego nie bylo zadnych comittów, dzisiaj udalo mi sie zainstalowac wszystko co potrzebuje, wiec dzisiaj mozna spodziewac sie pierwszych comittów odnosnie serwera. 
