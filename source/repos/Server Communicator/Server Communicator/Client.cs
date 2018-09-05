@@ -34,6 +34,15 @@ namespace Server_Communicator
             ssl.AuthenticateAsServer(program.certyfikat, false, System.Security.Authentication.SslProtocols.Tls12, true);
             br = new BinaryReader(ssl, Encoding.UTF8);
             bw = new BinaryWriter(ssl, Encoding.UTF8);
+            bw.Write(Packets.Hello);
+            bw.Flush();
+            int hello = br.ReadInt32();
+            if (hello != Packets.Hello)
+            {
+                //gdy hello bedzie nie takie jak oczekiwane nalezy uzyc wyjatku i zamknac polaczenie.
+            }
+
+            CloseConnection();
         }
 
         void CloseConnection()
@@ -43,11 +52,6 @@ namespace Server_Communicator
             ssl.Close();
             strumien.Close();
             client.Close();
-        }
-
-        public static bool ValidateCert(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
-        {
-            return true; //Dla niezaufanych certifikatow
         }
     }
 }
