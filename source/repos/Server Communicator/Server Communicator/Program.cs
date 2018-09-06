@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace Server_Communicator
 {
@@ -17,6 +19,10 @@ namespace Server_Communicator
         public TcpListener server; //TCP server
         public X509Certificate2 certyfikat = new X509Certificate2("server.pfx", "admin");
 
+        string usersFileName = Environment.CurrentDirectory + "\\users.dat";
+
+        public Dictionary<string, User>
+        users = new Dictionary<string, User>(); //Informacje na temat użytkowników oraz ich połączenia
 
 
         public Program()
@@ -24,6 +30,7 @@ namespace Server_Communicator
             Console.Title = "Bezpieczny Komunikator Server";
             Console.WriteLine("------ Bezpieczny Komunikator Server -----");
             server = new TcpListener(ip, port);
+            LoadUsers();
             server.Start();
         }
 
@@ -33,6 +40,36 @@ namespace Server_Communicator
             {
                 TcpClient tcpClient = server.AcceptTcpClient();
                 Client client = new Client(this, tcpClient);
+            }
+        }
+
+        public void SaveUsers()
+        {
+            try
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                FileStream File = new FileStream(usersFileName, FileMode.Create, FileAccess.Write);
+                bf.Serialize(File, users.Values.ToArray());
+                File.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
+
+        public void LoadUsers()
+        {
+            try
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                FileStream File = new FileStream(usersFileName, FileMode.Open, FileAccess.Read);
+                User[] userinfo = (User[])bf.Deserialize(File);
+                users = userinfo.ToDictionary((u) => u.Username, (u) => u); // konwersja tablicy do Dictionary
+            }
+            catch
+            {
+
             }
         }
 

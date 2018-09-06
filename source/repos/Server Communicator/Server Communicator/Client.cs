@@ -20,6 +20,8 @@ namespace Server_Communicator
         public BinaryReader br;
         public BinaryWriter bw;
 
+        User user;
+
 
         public Client(Program p, TcpClient c)
         {
@@ -42,17 +44,82 @@ namespace Server_Communicator
             {
                 //gdy hello bedzie nie takie jak oczekiwane nalezy uzyc wyjatku i zamknac polaczenie.
             }
+            byte logMode = br.ReadByte();
+            string username = br.ReadString();
+            string password = br.ReadString();
+
+            if (username.Length > 15)
+            {
+                if (password.Length > 20) //docelowo bedzie wiecej warunkow bezpicznego hasla
+                {
+
+                }
+                else bw.Write(Packets.PasswordError);
+            }
+            else bw.Write(Packets.UsernameError);
+
+            if (logMode == Packets.Register)
+            {
+                if (!program.users.ContainsKey(username))
+                {
+                    user = new User(username, password, this);
+                    program.users.Add(username, user);
+                    Console.WriteLine("[{0}][{1}] został zarejestrowany!", DateTime.Now, username);
+                    bw.Write(Packets.Done);
+                    bw.Flush();
+                    program.SaveUsers();
+                    Receiver();
+                }
+                else bw.Write(Packets.Exists); //juz istnieje taki uzytkownik
+            }
+            else if (logMode == Packets.Login)
+            {
+                if (program.users.TryGetValue(username, out user))
+                {
+                    if (password == user.Password)
+                    {
+                        //Haslo prawidlowe
+                        //Wylogowywanie innych osób zalogowanych na tym koncie
+                        if (user.IsLogged) user.Connection.CloseConnection();
+                        user.Connection = this;
+                        bw.Write(Packets.Done);
+                        bw.Flush();
+                        Receiver();
+                    }
+                    else bw.Write(Packets.WrongPassword); // Złe hasło
+                }
+                else bw.Write(Packets.NoExists); //Nie istnieje taki uzytkownik
+            }
 
             CloseConnection();
         }
 
         void CloseConnection()
         {
+            user.IsLogged = false;
             br.Close();
             bw.Close();
             ssl.Close();
             strumien.Close();
             client.Close();
+        }
+
+        void Receiver() //Otrzymywanie pakietów od klienta
+        {
+            Console.WriteLine("[{0}][{1}] został zalogowany!", DateTime.Now, user.Username);
+            user.IsLogged = true;
+            try
+            {
+                while (client.Client.Connected)
+                {
+                    byte type = br.ReadByte(); //pobieranie typu wiadomosci (rodzaj otrzymany czy wyslany) 
+                }
+            }
+            catch (IOException)
+            {
+
+            }
+            user.IsLogged = false;
         }
     }
 }
