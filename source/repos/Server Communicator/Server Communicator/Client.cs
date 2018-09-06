@@ -20,6 +20,7 @@ namespace Server_Communicator
         public BinaryReader br;
         public BinaryWriter bw;
 
+
         public Client(Program p, TcpClient c)
         {
             program = p;
