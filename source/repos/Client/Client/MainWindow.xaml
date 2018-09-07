@@ -14,13 +14,18 @@
         <Menu Height="26" HorizontalAlignment="Stretch" Grid.ColumnSpan="2">
             <MenuItem Header="_Open" Command="ApplicationCommands.Open" Height="26"/>
         </Menu>
-        <TextBox HorizontalAlignment="Left" Height="108" Margin="44,255,0,0" TextWrapping="Wrap" Text="Message" VerticalAlignment="Top" Width="278" Grid.Row="1"/>
-        <Button Content="Send" HorizontalAlignment="Left" Height="24" Margin="327,255,0,0" VerticalAlignment="Top" Width="76" Grid.Row="1"/>
-        <Label Content="" HorizontalAlignment="Left" Height="204" Margin="44,10,0,0" VerticalAlignment="Top" Width="359" Grid.Row="1" />
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="486.891,7,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
-        <Button Content="Sign In" HorizontalAlignment="Left" Height="22" Margin="591.891,7,0,0" VerticalAlignment="Top" Width="66" Grid.Row="1" />
-        <Button Content="Sign Up" HorizontalAlignment="Left" Height="22" Margin="591.891,34,0,0" VerticalAlignment="Top" Width="66" Grid.Row="1" />
-        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="22" Margin="486.891,34,0,0" VerticalAlignment="Top" Width="100" Password="1234" Grid.Row="1" />
+        <TextBox Name="MessageText" HorizontalAlignment="Left" Height="108" Margin="44,255,0,0" TextWrapping="Wrap" Text="Message" VerticalAlignment="Top" Width="278" Grid.Row="1"/>
+        <Button Name="SendMessageButton" Content="Send" HorizontalAlignment="Left" Height="24" Margin="327,255,0,0" VerticalAlignment="Top" Width="76" Grid.Row="1" Click="SendMessageButton_Click" IsEnabled="False"/>
+        <TextBlock Name="Chat" Text="" HorizontalAlignment="Left" Height="204" Margin="44,10,0,0" VerticalAlignment="Top" Width="359" Grid.Row="1" TextTrimming="CharacterEllipsis" />
+        <TextBox Name="UsernameText" HorizontalAlignment="Left" Height="22" Margin="486.891,7,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <Button Name="LoginButton" Content="Sign In" HorizontalAlignment="Left" Height="22" Margin="591.891,7,0,0" VerticalAlignment="Top" Width="66" Grid.Row="1" Click="Button_Click" />
+        <Button Name="RegisterButton" Content="Sign Up" HorizontalAlignment="Left" Height="22" Margin="591.891,34,0,0" VerticalAlignment="Top" Width="66" Grid.Row="1" Click="RegisterButton_Click" />
+        <PasswordBox x:Name="PasswordText" HorizontalAlignment="Left" Height="22" Margin="486.891,34,0,0" VerticalAlignment="Top" Width="100" Password="1234" Grid.Row="1" />
+        <Button Name="LogoutButton" Content="Log Out" HorizontalAlignment="Left" Height="22" Margin="592,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Click="LogoutButton_Click" IsEnabled="False"/>
+        <Label Name="Status" Content="" HorizontalAlignment="Left" Height="24" Margin="663,7,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119"/>
+        <TextBox Name="Receiver" HorizontalAlignment="Left" Height="22" Margin="408,255,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Receiver" VerticalAlignment="Top" Width="75" TextAlignment="Center" IsEnabled="True"/>
+        <Button Name="EndButton" Content="End" HorizontalAlignment="Left" Margin="327,284,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="EndButton_Click" IsEnabled="False"/>
+        <Button Name="StartButton" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="408,284,0,0" Grid.Row="1" IsEnabled="False" Click="StartButton_Click"/>
 
 
     </Grid>

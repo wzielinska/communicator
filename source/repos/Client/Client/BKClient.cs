@@ -118,6 +118,7 @@ namespace Client
             {
                 if (_registering) OnRegisterOK();
                 OnLoginOK();
+                Receiver();
             }
             else
             {
@@ -125,8 +126,7 @@ namespace Client
                 if (_registering) OnRegisterFailed(err);
                 else OnLoginFailed(err);
             }
-
-            CloseConnection();
+            if(_connected) CloseConnection();
         }
 
         void CloseConnection()
@@ -136,6 +136,8 @@ namespace Client
             ssl.Close();
             strumien.Close();
             client.Close();
+            OnDisconnectedOK();
+            _connected = false;
         }
 
         void Connect(string username, string password, bool register){
@@ -174,6 +176,27 @@ namespace Client
             return true; //Dla niezaufanych certifikatow
         }
 
+        public void IsAvailable(string user)
+        {
+            if (_connected)
+            {
+                bw.Write(Packets.IsAvailable);
+                bw.Write(user);
+                bw.Flush();
+            }
+        }
+
+        public void SendMessage(string adresat, string msg)
+        {
+            if (_connected)
+            {
+                bw.Write(Packets.SendMessage);
+                bw.Write(adresat);
+                bw.Write(msg);
+                bw.Flush();
+            }
+        }
+
         void Receiver()
         {
             _logged = true;
@@ -183,6 +206,20 @@ namespace Client
                 while (client.Connected)
                 {
                     byte type = br.ReadByte();
+
+                    if (type == Packets.IsAvailable)
+                    {
+                        string user = br.ReadString();
+                        bool IsAvailable = br.ReadBoolean();
+
+                        OnUserAvailable(new AvailableEventArgs(user, IsAvailable));
+                    }
+                    if (type == Packets.Received)
+                    {
+                        string nadawca = br.ReadString();
+                        string msg = br.ReadString();
+                        OnMessageReceived(new ReceivedEventArgs(nadawca, msg));
+                    }
                 }
             }
             catch (IOException)
@@ -192,5 +229,7 @@ namespace Client
 
             _logged = false;
         }
+
+
     }
 }

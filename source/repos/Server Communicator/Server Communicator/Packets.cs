@@ -2,7 +2,7 @@
 
 public class Packets
 {
-    public const byte Hello = 0; //Hello
+    public const int Hello = 59; //Hello
     public const byte Done = 1; //Done
     public const byte Login = 2; //Login
     public const byte Register = 3; //Register

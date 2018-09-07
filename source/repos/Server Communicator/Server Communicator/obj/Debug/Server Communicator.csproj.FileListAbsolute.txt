@@ -5,3 +5,10 @@ c:\users\mariu\source\repos\Server Communicator\Server Communicator\obj\Debug\Se
 c:\users\mariu\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.csproj.CoreCompileInputs.cache
 c:\users\mariu\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.exe
 c:\users\mariu\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.pdb
+C:\Users\mariu\Communicator\source\repos\Server Communicator\Server Communicator\bin\Debug\Server Communicator.exe.config
+C:\Users\mariu\Communicator\source\repos\Server Communicator\Server Communicator\bin\Debug\Server Communicator.exe
+C:\Users\mariu\Communicator\source\repos\Server Communicator\Server Communicator\bin\Debug\Server Communicator.pdb
+C:\Users\mariu\Communicator\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.csprojAssemblyReference.cache
+C:\Users\mariu\Communicator\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Communicator\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.exe
+C:\Users\mariu\Communicator\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.pdb

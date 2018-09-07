@@ -13,7 +13,6 @@ using System.IO;
 /*TODO:
     Sprawdzanie dostepnosci innych klientow.
     Wysylanie wiadomosci do wybranych klientow jezeli sa dostepni.
-    UI dla aplikacji klienta.
     Szyfrowanie plikow serwera odnosnie kont (aes??)
     Przechowywanie hasel w formie haszow (SHA-3??)
     Książka kontaktów
@@ -30,7 +29,7 @@ namespace Server_Communicator
         public int port = 1234;
         public bool dziala = true;
         public TcpListener server; //TCP server
-        public X509Certificate2 certyfikat = new X509Certificate2("server.pfx", "admin");
+        public X509Certificate2 certyfikat = new X509Certificate2("C:/Users/mariu/Communicator/source/repos/Server Communicator/Server Communicator/server.pfx", "admin");
 
         string usersFileName = Environment.CurrentDirectory + "\\users.dat";
 
@@ -44,7 +43,11 @@ namespace Server_Communicator
             Console.WriteLine("------ Bezpieczny Komunikator Server -----");
             server = new TcpListener(ip, port);
             LoadUsers();
+            Console.WriteLine("[{0}] Rozpoczynanie pracy serwera...", DateTime.Now);
             server.Start();
+            Console.WriteLine("[{0}] Serwer został uruchomiony prawidłowo!", DateTime.Now);
+
+            Listen();
         }
 
         void Listen() //Nadchodzące połączenia
@@ -60,10 +63,12 @@ namespace Server_Communicator
         {
             try
             {
+                Console.WriteLine("[{0}] Zapisywanie bazy danych użytkowników!", DateTime.Now);
                 BinaryFormatter bf = new BinaryFormatter();
                 FileStream File = new FileStream(usersFileName, FileMode.Create, FileAccess.Write);
                 bf.Serialize(File, users.Values.ToArray());
                 File.Close();
+                Console.WriteLine("[{0}]Zapisano bazę danych użytkowników!", DateTime.Now);
                 //TODO szyfrowanie serwera pliku
             }
             catch (Exception e)
@@ -76,10 +81,12 @@ namespace Server_Communicator
         {
             try
             {
+                Console.WriteLine("[{0}] Wczytywanie bazy danych użytkowników!", DateTime.Now);
                 BinaryFormatter bf = new BinaryFormatter();
                 FileStream File = new FileStream(usersFileName, FileMode.Open, FileAccess.Read);
                 User[] userinfo = (User[])bf.Deserialize(File);
                 users = userinfo.ToDictionary((u) => u.Username, (u) => u); // konwersja tablicy do Dictionary
+                Console.WriteLine("[{0}] Wczytano bazę danych użytkowników!", DateTime.Now);
                 //TODO odszyfrowanie pliku serweera
             }
             catch

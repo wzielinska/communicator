@@ -48,9 +48,9 @@ namespace Server_Communicator
             string username = br.ReadString();
             string password = br.ReadString();
 
-            if (username.Length > 15)
+            if (username.Length < 15)
             {
-                if (password.Length > 20) //docelowo bedzie wiecej warunkow bezpicznego hasla
+                if (password.Length < 20) //docelowo bedzie wiecej warunkow bezpicznego hasla
                 {
 
                 }
@@ -113,6 +113,46 @@ namespace Server_Communicator
                 while (client.Client.Connected)
                 {
                     byte type = br.ReadByte(); //pobieranie typu wiadomosci (rodzaj otrzymany czy wyslany) 
+                    if (type == Packets.IsAvailable)
+                    {
+                        string kto = br.ReadString();
+
+                        bw.Write(Packets.IsAvailable);
+                        bw.Write(kto);
+
+
+                        if (program.users.TryGetValue(kto, out User info))
+                        {
+                            if (info.IsLogged) bw.Write(true); //Dostępny
+                            else bw.Write(false); //Niedostępny
+                        }
+                        else bw.Write(false); //Nie istnieje
+                        bw.Flush();
+                    }
+                    else if (type == Packets.SendMessage)
+                    {
+                        string kto = br.ReadString();
+                        string msg = br.ReadString();
+
+                        if (program.users.TryGetValue(kto, out User adresat))
+                        {
+                            if (adresat.IsLogged)
+                            {
+
+                                adresat.Connection.bw.Write(Packets.Received);
+
+                                adresat.Connection.bw.Write(user.Username);
+
+                                adresat.Connection.bw.Write(msg);
+
+                                adresat.Connection.bw.Flush();
+
+                                Console.WriteLine("[{0}]({1}->{2}) Wysłano wiadomość!", DateTime.Now, user.Username, adresat.Username);
+                            }
+                        }
+
+                    }
+
                 }
             }
             catch (IOException)
@@ -120,6 +160,8 @@ namespace Server_Communicator
 
             }
             user.IsLogged = false;
+
+            Console.WriteLine("[{0}] ({1}) Użytkownik wylogowany!", DateTime.Now, user.Username);
         }
     }
 }
