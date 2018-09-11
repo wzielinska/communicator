@@ -87,6 +87,7 @@ namespace Server_Communicator
                 User[] userinfo = (User[])bf.Deserialize(File);
                 users = userinfo.ToDictionary((u) => u.Username, (u) => u); // konwersja tablicy do Dictionary
                 Console.WriteLine("[{0}] Wczytano bazę danych użytkowników!", DateTime.Now);
+                File.Close();
                 //TODO odszyfrowanie pliku serweera
             }
             catch

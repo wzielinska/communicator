@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:app1="clr-namespace:App1"
+             x:Class="App1.LoginPage"
+             BackgroundColor="White">
+    <!--<ContentPage.BindingContext>
+        <app1:AppViewModel x:Name="AppViewModel"/>
+    </ContentPage.BindingContext>-->
+    <ContentPage.Content>
+      <StackLayout Orientation="Vertical" Padding="30" Spacing="10">
+            <BoxView HeightRequest="10"/>
+            <Frame BackgroundColor="#BF043055" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Entry x:Name="Username" Text="{Binding Username}" Placeholder="Username" 
+                           PlaceholderColor="Black" HeightRequest="40" 
+                           Keyboard="Email" 
+                           TextColor="Black"/>
+                    <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password" 
+                          PlaceholderColor="Black" HeightRequest="40"
+                          IsPassword="True"
+                          TextColor="Black"/>
+                    <Entry x:Name="ConfirmPassword" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" 
+                          PlaceholderColor="Black" HeightRequest="40"
+                          IsPassword="True"
+                          TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="Login" Command="{Binding LoginAndGoCommand}" Text="Login" TextColor="White" 
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#088da5"/>
+            <Button x:Name="Register" Command="{Binding RegisterAndGoCommand}" Text="Register" TextColor="White" 
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#088da5"/>
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

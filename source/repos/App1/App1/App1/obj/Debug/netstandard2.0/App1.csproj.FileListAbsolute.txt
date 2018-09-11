@@ -1,0 +1,25 @@
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\mariu\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\mariu\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\mariu\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\mariu\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\LoginPage\LoginPage.xaml.g.cs
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\obj\Debug\netstandard2.0\MessengerPage\MessengerPage.xaml.g.cs
