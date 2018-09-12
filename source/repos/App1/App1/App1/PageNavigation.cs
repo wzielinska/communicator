@@ -23,6 +23,19 @@ namespace App1
             Application.Current.MainPage.Navigation.PopToRootAsync();
         }
 
+        public void GoBackToMessenger()
+        {
+            Application.Current.MainPage.Navigation.PopAsync();
+        }
+
+        public void GoToChat(object bindingContext)
+        {
+            Application.Current.MainPage.Navigation.PushAsync(new ChatPage_.ChatPage()
+            {
+                BindingContext = bindingContext
+            });
+        }
+
         public void GoToMessenger(object bindingContext)
         {
             Application.Current.MainPage.Navigation.PushAsync(new MessengerPage_.MessengerPage() {

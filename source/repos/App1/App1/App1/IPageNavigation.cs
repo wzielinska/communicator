@@ -12,6 +12,10 @@ namespace App1
 
         void GoToMessenger(object bindingContext);
 
+        void GoToChat(object bindingContext);
+
+        void GoBackToMessenger();
+
         void GoBackToLoginPage();
 
         #endregion

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
+using System.Collections.ObjectModel;
 
 namespace App1
 {
@@ -17,15 +18,15 @@ namespace App1
         #endregion
 
         #region properties
-        public Command GoToMessengerPageCommand { get; set; }
 
-        public Command GoBackToLoginPageCommand { get; set; }
 
         BKClient client = new BKClient();
 
-        public ICommand LoginCommand { protected set; get; }
+        public Command AddFriend { get; set; }
 
-        public ICommand RegisterCommand { protected set; get; }
+        public Command RemoveFriend { get; set; }
+
+        public Command GoBackToMessengerPageCommand { get; set; }
 
         public ICommand LoginAndGoCommand
         {
@@ -51,11 +52,53 @@ namespace App1
             }
         }
 
+        public ICommand LogoutAndBackCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    OnLogout();
+                    ExecuteGoBackToLoginPage();
+                });
+            }
+        }
+
         public Action DisplayInvalidLoginPrompt;
 
         public Action DisplayInvalidConfirmationPrompt;
 
         public Action DisplayInvalidRegisterPrompt;
+
+        private string _ItemSelected;
+        public string objItemSelected
+        {
+            get { return _ItemSelected; }
+            set
+            {
+                if (_ItemSelected != value)
+                {
+                    _ItemSelected = value;
+                    OnPropertyChanged("Item Selected");
+                }
+            }
+        }
+
+        private ObservableCollection<string> _FriendList;
+        public ObservableCollection<string> FriendList
+        {
+            get { if (_FriendList != null) return _FriendList;
+                else return _FriendList = new ObservableCollection<string>();
+            }
+            set
+            {
+                if (_FriendList !=value)
+                {
+                    _FriendList = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
         #endregion
 
         #region LoginCredentials
@@ -94,19 +137,17 @@ namespace App1
         }
         #endregion
 
-        
+
 
         public LoginPageViewModel()
         {
             _navigation = DependencyService.Get<IPageNavigation>();
 
-            GoToMessengerPageCommand = new Command(ExecuteGoToMessengerPage);
+            GoBackToMessengerPageCommand = new Command(ExecuteGoBackToMessengerPage);
 
-            GoBackToLoginPageCommand = new Command(ExecuteGoBackToLoginPage);
+            AddFriend = new Command(ExecuteAddFriend);
 
-            LoginCommand = new Command(OnLogin);
-
-            RegisterCommand = new Command(OnRegister);
+            RemoveFriend = new Command(ExecuteRemoveFriend);
 
             client.LoginOK += new EventHandler(_LoginOK);
 
@@ -115,7 +156,12 @@ namespace App1
             client.LoginFailed += new ErrorEventHandler(_LoginFailed);
 
             client.RegisterFailed += new ErrorEventHandler(_RegisterFailed);
+
+            client.Disconnected += new EventHandler(_Disconnected);
+
+            FriendList.Add("Example User");
         }
+
 
         #region methods
 
@@ -134,6 +180,11 @@ namespace App1
                 if (_password == _confirmpassword) client.Register(_username, _password);
                 else DisplayInvalidConfirmationPrompt();
             else DisplayInvalidRegisterPrompt();
+        }
+
+        public void OnLogout()
+        {
+            client.Disconnect();
         }
 
         void _LoginOK(object sender, EventArgs e)
@@ -156,6 +207,21 @@ namespace App1
             DisplayInvalidLoginPrompt();
         }
 
+        private void _Disconnected(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExecuteGoToChatPage()
+        {
+            _navigation.GoToChat(this);
+        }
+
+        private void ExecuteGoBackToMessengerPage()
+        {
+            _navigation.GoBackToMessenger();
+        }
+
         private void ExecuteGoToMessengerPage()
         {
             _navigation.GoToMessenger(this);
@@ -164,6 +230,22 @@ namespace App1
         private void ExecuteGoBackToLoginPage()
         {
             _navigation.GoBackToLoginPage();
+        }
+
+        private void ExecuteRemoveFriend()
+        {
+            FriendList.Remove(objItemSelected);
+        }
+
+        private void ExecuteAddFriend()
+        {
+            FriendList.Add("Jarek");
+        }
+
+        private void ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var content = e.Item;
+            ExecuteGoToChatPage();
         }
         #endregion
 

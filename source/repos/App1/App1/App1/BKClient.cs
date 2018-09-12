@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace App1
     //Klasa obsługująca i wysyłająca wszystkie pakiety protokołu
 {
-    class BKClient
+    public class BKClient
     {
         Thread tcpThread;
         bool _connected = false;
