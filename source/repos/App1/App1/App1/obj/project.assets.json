@@ -349,11 +349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1\\App1.csproj",
+      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1\\App1.csproj",
       "projectName": "App1",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1\\App1.csproj",
+      "projectPath": "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1\\App1.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1\\obj\\",
+      "outputPath": "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

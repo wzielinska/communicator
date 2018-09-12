@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=dbb68a80-6790-474c-9d7d-c8ef643bee4e</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>04DF70036A30CB6DC3851D5803FD45A9C849B4F7096802761E86AF5B6F32B6FF</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>41eded5c-c93d-4a4f-bc5f-41b75bb11c1e_1.0.0.0_x86__4e5a131hrc0mm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>41eded5c-c93d-4a4f-bc5f-41b75bb11c1e_4e5a131hrc0mm!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-11T11:43:37.781</Modified>
+      <Modified>2018-09-12T06:35:23.241</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.exe">
       <PackagePath>entrypoint\App1.UWP.exe</PackagePath>
-      <Modified>2018-09-11T11:43:36.234</Modified>
+      <Modified>2018-09-12T06:35:21.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -711,160 +711,160 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2018-07-26T17:16:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll">
       <PackagePath>App1.dll</PackagePath>
-      <Modified>2018-09-11T11:43:29.087</Modified>
+      <Modified>2018-09-12T06:35:13.581</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.450</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.737</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.753</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.767</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.985</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:30.997</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.007</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.018</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.298</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.320</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.326</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.525</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.555</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.567</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.573</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.748</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.754</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:31.789</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:32.075</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:32.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:32.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:32.134</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-09-11T05:59:32.384</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-09-11T05:59:32.394</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.xr.xml">
       <PackagePath>App1.UWP.xr.xml</PackagePath>
       <Modified>2018-09-11T06:37:03.282</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-09-11T11:43:35.861</Modified>
+      <Modified>2018-09-12T06:35:21.292</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-09-11T11:43:35.865</Modified>
+      <Modified>2018-09-12T06:35:21.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -918,14 +918,14 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2018-07-26T17:16:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-11T07:53:27.841</Modified>
+      <Modified>2018-09-12T06:31:44.008</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\App1.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\App1.UWP.exe">
       <PackagePath>App1.UWP.exe</PackagePath>
-      <Modified>2018-09-11T11:43:37.761</Modified>
+      <Modified>2018-09-12T06:35:23.218</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

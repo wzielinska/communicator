@@ -27,16 +27,26 @@ namespace App1
 
         public ICommand RegisterCommand { protected set; get; }
 
-        public ICommand LoginAndGo { get; set; }
-
-        public ICommand RegisterAndGo
+        public ICommand LoginAndGoCommand
         {
             get
             {
                 return new Command(() =>
                 {
-                    RegisterCommand.Execute(null);
-                    GoToMessengerPageCommand.Execute(null);
+                    OnLogin();
+                    ExecuteGoToMessengerPage();
+                });
+            }
+        }
+
+        public ICommand RegisterAndGoCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    OnRegister();
+                    ExecuteGoToMessengerPage();
                 });
             }
         }

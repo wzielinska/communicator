@@ -1,1 +1,1 @@
-C:\Users\mariu\Desktop\New folder\repos\App1\App1\App1.UWP\App1.UWP.csproj;x86
+C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\App1.UWP.csproj;x86

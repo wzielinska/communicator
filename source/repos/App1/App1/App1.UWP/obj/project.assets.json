@@ -7454,11 +7454,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
       "projectName": "App1.UWP",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
+      "projectPath": "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1.UWP\\obj\\",
+      "outputPath": "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -7478,8 +7478,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\New folder\\repos\\App1\\App1\\App1\\App1.csproj"
+            "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
+              "projectPath": "C:\\Users\\mariu\\Desktop\\New folder\\source\\repos\\App1\\App1\\App1\\App1.csproj"
             }
           }
         }
