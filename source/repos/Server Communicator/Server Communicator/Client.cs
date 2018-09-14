@@ -96,7 +96,7 @@ namespace Server_Communicator
 
         void CloseConnection()
         {
-            user.IsLogged = false;
+            if (user != null) user.IsLogged = false;
             br.Close();
             bw.Close();
             ssl.Close();

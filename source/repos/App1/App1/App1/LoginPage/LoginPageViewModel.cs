@@ -28,14 +28,16 @@ namespace App1
 
         public Command GoBackToMessengerPageCommand { get; set; }
 
+        public Command GoToChatPageCommand { get; set; }
+
         public ICommand LoginAndGoCommand
         {
             get
             {
                 return new Command(() =>
                 {
-                    OnLogin();
-                    ExecuteGoToMessengerPage();
+                    //OnLogin();
+                    if (OnLogin()) ExecuteGoToMessengerPage();
                 });
             }
         }
@@ -46,8 +48,7 @@ namespace App1
             {
                 return new Command(() =>
                 {
-                    OnRegister();
-                    ExecuteGoToMessengerPage();
+                    if (OnRegister()) ExecuteGoToMessengerPage();
                 });
             }
         }
@@ -69,6 +70,30 @@ namespace App1
         public Action DisplayInvalidConfirmationPrompt;
 
         public Action DisplayInvalidRegisterPrompt;
+
+        public Action DisplayUserNoExist;
+
+        public Action DisplayWrongPassword;
+
+        public Action DisplayUserExist;
+
+        public Action DisplayInvalidChatUserPrompt;
+
+        public Action DisplayNoFriendName;
+
+        private string _addfriend;
+        public string addFriend
+        {
+            get { return _addfriend; }
+            set
+            {
+                if (_addfriend != value)
+                {
+                    _addfriend = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         private string _ItemSelected;
         public string objItemSelected
@@ -145,6 +170,8 @@ namespace App1
 
             GoBackToMessengerPageCommand = new Command(ExecuteGoBackToMessengerPage);
 
+            GoToChatPageCommand = new Command(ExecuteGoToChatPage);
+            
             AddFriend = new Command(ExecuteAddFriend);
 
             RemoveFriend = new Command(ExecuteRemoveFriend);
@@ -159,27 +186,44 @@ namespace App1
 
             client.Disconnected += new EventHandler(_Disconnected);
 
-            FriendList.Add("Example User");
+
         }
 
 
         #region methods
 
-        public void OnLogin()
+        public Boolean OnLogin()
         {
             if (_username != null && _password != null)
             {
                 client.Login(_username, _password);
+                return true;
             }
-            else DisplayInvalidLoginPrompt();
+            else
+            {
+                DisplayInvalidLoginPrompt();
+                return false;
+            }
         }
 
-        public void OnRegister()
+        public Boolean OnRegister()
         {
             if (_username != null && _password != null)
-                if (_password == _confirmpassword) client.Register(_username, _password);
-                else DisplayInvalidConfirmationPrompt();
-            else DisplayInvalidRegisterPrompt();
+                if (_password == _confirmpassword)
+                {
+                    client.Register(_username, _password);
+                    return true;
+                }
+                else
+                {
+                    DisplayInvalidConfirmationPrompt();
+                    return false;
+                }
+            else
+            {
+                DisplayInvalidRegisterPrompt();
+                return false;
+            }
         }
 
         public void OnLogout()
@@ -189,32 +233,37 @@ namespace App1
 
         void _LoginOK(object sender, EventArgs e)
         {
+            //ExecuteGoToMessengerPage();
 
         }
 
         void _RegisterOK(object sender, EventArgs e)
         {
-
+            //ExecuteGoToMessengerPage();
         }
 
         void _LoginFailed(object sender, ErrorEventArgs e)
         {
-            DisplayInvalidLoginPrompt();
+            //if (e.Error == ErrorEvent.WrongPassword) DisplayWrongPassword();
+            //else if (e.Error == ErrorEvent.NoExists) DisplayUserNoExist();
+            //else DisplayInvalidLoginPrompt();
         }
 
         void _RegisterFailed(object sender, ErrorEventArgs e)
         {
-            DisplayInvalidLoginPrompt();
+            //if (e.Error == ErrorEvent.Exists) DisplayUserExist();
+            //else DisplayInvalidRegisterPrompt();
         }
 
         private void _Disconnected(object sender, EventArgs e)
         {
-
+            //ExecuteGoBackToLoginPage();
         }
 
         private void ExecuteGoToChatPage()
         {
-            _navigation.GoToChat(this);
+            if (_ItemSelected != null) _navigation.GoToChat(this);
+            else DisplayInvalidChatUserPrompt();
         }
 
         private void ExecuteGoBackToMessengerPage()
@@ -235,18 +284,15 @@ namespace App1
         private void ExecuteRemoveFriend()
         {
             FriendList.Remove(objItemSelected);
+            objItemSelected = null;
         }
 
         private void ExecuteAddFriend()
         {
-            FriendList.Add("Jarek");
+            if (addFriend != null && addFriend != "") FriendList.Add(addFriend);
+            else DisplayNoFriendName();
         }
 
-        private void ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            var content = e.Item;
-            ExecuteGoToChatPage();
-        }
         #endregion
 
         #region InotifyPropertyChanged implementation

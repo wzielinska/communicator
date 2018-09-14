@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:app1="clr-namespace:App1"
              x:Class="App1.LoginPage"
+             NavigationPage.HasBackButton="False"
              BackgroundColor="White">
     <!--<ContentPage.BindingContext>
         <app1:AppViewModel x:Name="AppViewModel"/>
     </ContentPage.BindingContext>-->
     <ContentPage.Content>
-      <StackLayout Orientation="Vertical" Padding="30" Spacing="10">
+      <StackLayout Orientation="Vertical" Padding="30" Spacing="10" BackgroundColor="Azure">
             <BoxView HeightRequest="10"/>
             <Frame BackgroundColor="#BF043055" HasShadow="False">
                 <StackLayout Orientation="Vertical" Spacing="10">

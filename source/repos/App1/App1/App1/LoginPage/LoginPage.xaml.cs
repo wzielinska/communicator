@@ -18,11 +18,16 @@ namespace App1
 		{
             this.BindingContext = vm;
             vm.DisplayInvalidLoginPrompt += () => DisplayAlert("Error", "Invalid Login, try again!", "OK");
+            vm.DisplayUserNoExist += () => DisplayAlert("Error", "User do not exist, try again!", "OK");
+            vm.DisplayWrongPassword += () => DisplayAlert("Error", "Wrong Password, try again!", "OK");
+            vm.DisplayUserExist += () => DisplayAlert("Error", "User already exists, try again!", "OK");
             vm.DisplayInvalidConfirmationPrompt += () => DisplayAlert("Error", "Passwords do not match!", "OK");
             vm.DisplayInvalidRegisterPrompt += () => DisplayAlert("Error", "Invalid Register, try again!", "OK");
-            
+            vm.DisplayInvalidChatUserPrompt += () => DisplayAlert("Error", "Choose user!", "OK");
+            vm.DisplayNoFriendName += () => DisplayAlert("Error", "Enter Valid Friend's Name!", "OK");
 
-        InitializeComponent ();
+
+            InitializeComponent ();
 
             Username.Completed += (object sender, EventArgs e) =>
             {

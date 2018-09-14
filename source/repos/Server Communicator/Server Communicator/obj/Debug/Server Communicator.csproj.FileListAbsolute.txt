@@ -19,3 +19,10 @@ C:\Users\mariu\Desktop\New folder\repos\Server Communicator\Server Communicator\
 C:\Users\mariu\Desktop\New folder\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.csproj.CoreCompileInputs.cache
 C:\Users\mariu\Desktop\New folder\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.exe
 C:\Users\mariu\Desktop\New folder\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.pdb
+C:\Users\mariu\Desktop\New folder\source\repos\Server Communicator\Server Communicator\bin\Debug\Server Communicator.exe.config
+C:\Users\mariu\Desktop\New folder\source\repos\Server Communicator\Server Communicator\bin\Debug\Server Communicator.exe
+C:\Users\mariu\Desktop\New folder\source\repos\Server Communicator\Server Communicator\bin\Debug\Server Communicator.pdb
+C:\Users\mariu\Desktop\New folder\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.csprojAssemblyReference.cache
+C:\Users\mariu\Desktop\New folder\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Desktop\New folder\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.exe
+C:\Users\mariu\Desktop\New folder\source\repos\Server Communicator\Server Communicator\obj\Debug\Server Communicator.pdb
