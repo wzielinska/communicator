@@ -1,15 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
              x:Class="App1.ChatPage_.ChatPage">
-  <ContentPage.Content>
-      <StackLayout BackgroundColor="Azure">
-            <ListView x:Name="MessagesListView" HasUnevenRows="True" SeparatorVisibility="None" >
-                
-            </ListView>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:DataTemplateSelectorChat x:Key="MessageTemplateSelector"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="MessagesListView" 
+                  HasUnevenRows="True" 
+                  SeparatorVisibility="None"
+                  ItemTemplate="{StaticResource MessageTemplateSelector}"
+                  ItemsSource="Binding Messages"/>
+        <StackLayout Orientation="Horizontal" Grid.Row="1" Padding="10" BackgroundColor="Azure">
+            <Entry HorizontalOptions="FillAndExpand" HeightRequest="25" Placeholder="Message" Text="{Binding OutgoingText}"/>
+            <Button Text="Send" Command="{Binding SendCommand}" TextColor="White" 
+                        FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#088da5"/>
             <Button x:Name="BackToMessengerBtN" Command="{Binding GoBackToMessengerPageCommand}" Text="Back" TextColor="White" 
                         FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
                         BackgroundColor="#088da5"/>
         </StackLayout>
-  </ContentPage.Content>
+    </Grid>
 </ContentPage>

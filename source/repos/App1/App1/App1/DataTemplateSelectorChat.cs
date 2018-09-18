@@ -20,7 +20,9 @@ namespace App1
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            throw new NotImplementedException();
+            var messageVm = item as Message;
+            if (messageVm == null) return null;
+            return messageVm.IsIncoming ? this.incomingDataTemplate : this.outgoingDataTemplate;
         }
     }
 }

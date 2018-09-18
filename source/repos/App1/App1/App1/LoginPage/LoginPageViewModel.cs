@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using PSC.Xamarin.MvvmHelpers;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -29,6 +28,8 @@ namespace App1
         public Command GoBackToMessengerPageCommand { get; set; }
 
         public Command GoToChatPageCommand { get; set; }
+
+        public Command SendCommand { get; set; }
 
         public ICommand LoginAndGoCommand
         {
@@ -122,6 +123,39 @@ namespace App1
                 }
             }
         }
+
+        private ObservableRangeCollection<Message> _Messages;
+        public ObservableRangeCollection<Message> Messages
+        {
+            get
+            {
+                if (_Messages != null) return _Messages;
+                else return _Messages = new ObservableRangeCollection<Message>();
+            }
+            set
+            {
+                if (_Messages != value)
+                {
+                    _Messages = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        string outgoingText = string.Empty;
+        public string OutgoingText
+        {
+            get { return outgoingText; }
+            set
+            {
+                if (outgoingText != value)
+                {
+                    outgoingText = value;
+                    OnPropertyChanged();
+                }
+            }
+
+        }
         #endregion
 
         #region LoginCredentials
@@ -174,6 +208,8 @@ namespace App1
 
             RemoveFriend = new Command(ExecuteRemoveFriend);
 
+            SendCommand = new Command(ExecuteSendCommand);
+
             client.LoginOK += new EventHandler(_LoginOK);
 
             client.RegisterOK += new EventHandler(_RegisterOK);
@@ -184,8 +220,16 @@ namespace App1
 
             client.Disconnected += new EventHandler(_Disconnected);
 
+           // client.UserAvailable = new AvailableEventHandler(_UserAvailable);
+
+           // client.MessageReceived = new ReceivedEventHandler(_MessegeReceived);
+
 
         }
+
+
+
+
 
 
         #region methods
@@ -279,6 +323,16 @@ namespace App1
             });
         }
 
+        private void _MessegeReceived(object sender, ReceivedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void _UserAvailable(object sender, AvailableEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         private void _Disconnected(object sender, EventArgs e)
         {
             Device.BeginInvokeOnMainThread(() =>
@@ -318,6 +372,22 @@ namespace App1
         {
             if (addFriend != null && addFriend != "") FriendList.Add(addFriend);
             else DisplayNoFriendName();
+        }
+
+        private void ExecuteSendCommand()
+        {
+            var message = new Message
+            {
+                Text = OutgoingText,
+                IsIncoming = false,
+                MessageDateTime = DateTime.Now
+            };
+
+            Messages.Add(message);
+
+            //wyslij wiadomosc
+
+            OutgoingText = string.Empty;
         }
 
         #endregion

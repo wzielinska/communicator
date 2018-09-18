@@ -36,6 +36,6 @@ C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\obj\Debug\netstand
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
-C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp

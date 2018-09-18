@@ -28,6 +28,132 @@
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.exe">
       <PackagePath>entrypoint\App1.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core\2.5.1\lib\netstandard2.0\Humanizer.dll">
+      <PackagePath>Humanizer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.af\2.5.1\lib\netstandard2.0\af\Humanizer.resources.dll">
+      <PackagePath>af\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.ar\2.5.1\lib\netstandard2.0\ar\Humanizer.resources.dll">
+      <PackagePath>ar\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.bg\2.5.1\lib\netstandard2.0\bg\Humanizer.resources.dll">
+      <PackagePath>bg\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.bn-bd\2.5.1\lib\netstandard2.0\bn-BD\Humanizer.resources.dll">
+      <PackagePath>bn-BD\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.cs\2.5.1\lib\netstandard2.0\cs\Humanizer.resources.dll">
+      <PackagePath>cs\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.da\2.5.1\lib\netstandard2.0\da\Humanizer.resources.dll">
+      <PackagePath>da\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.de\2.5.1\lib\netstandard2.0\de\Humanizer.resources.dll">
+      <PackagePath>de\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.el\2.5.1\lib\netstandard2.0\el\Humanizer.resources.dll">
+      <PackagePath>el\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.es\2.5.1\lib\netstandard2.0\es\Humanizer.resources.dll">
+      <PackagePath>es\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.fa\2.5.1\lib\netstandard2.0\fa\Humanizer.resources.dll">
+      <PackagePath>fa\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.fi-fi\2.5.1\lib\netstandard2.0\fi-FI\Humanizer.resources.dll">
+      <PackagePath>fi-FI\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.fr\2.5.1\lib\netstandard2.0\fr\Humanizer.resources.dll">
+      <PackagePath>fr\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.fr-be\2.5.1\lib\netstandard2.0\fr-BE\Humanizer.resources.dll">
+      <PackagePath>fr-BE\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.he\2.5.1\lib\netstandard2.0\he\Humanizer.resources.dll">
+      <PackagePath>he\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.hr\2.5.1\lib\netstandard2.0\hr\Humanizer.resources.dll">
+      <PackagePath>hr\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.hu\2.5.1\lib\netstandard2.0\hu\Humanizer.resources.dll">
+      <PackagePath>hu\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.id\2.5.1\lib\netstandard2.0\id\Humanizer.resources.dll">
+      <PackagePath>id\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.it\2.5.1\lib\netstandard2.0\it\Humanizer.resources.dll">
+      <PackagePath>it\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.ja\2.5.1\lib\netstandard2.0\ja\Humanizer.resources.dll">
+      <PackagePath>ja\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.lv\2.5.1\lib\netstandard2.0\lv\Humanizer.resources.dll">
+      <PackagePath>lv\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.nb\2.5.1\lib\netstandard2.0\nb\Humanizer.resources.dll">
+      <PackagePath>nb\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.nb-no\2.5.1\lib\netstandard2.0\nb-NO\Humanizer.resources.dll">
+      <PackagePath>nb-NO\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.nl\2.5.1\lib\netstandard2.0\nl\Humanizer.resources.dll">
+      <PackagePath>nl\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.pl\2.5.1\lib\netstandard2.0\pl\Humanizer.resources.dll">
+      <PackagePath>pl\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.pt\2.5.1\lib\netstandard2.0\pt\Humanizer.resources.dll">
+      <PackagePath>pt\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.ro\2.5.1\lib\netstandard2.0\ro\Humanizer.resources.dll">
+      <PackagePath>ro\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.ru\2.5.1\lib\netstandard2.0\ru\Humanizer.resources.dll">
+      <PackagePath>ru\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.sk\2.5.1\lib\netstandard2.0\sk\Humanizer.resources.dll">
+      <PackagePath>sk\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.sl\2.5.1\lib\netstandard2.0\sl\Humanizer.resources.dll">
+      <PackagePath>sl\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.sr\2.5.1\lib\netstandard2.0\sr\Humanizer.resources.dll">
+      <PackagePath>sr\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.sr-latn\2.5.1\lib\netstandard2.0\sr-Latn\Humanizer.resources.dll">
+      <PackagePath>sr-Latn\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.sv\2.5.1\lib\netstandard2.0\sv\Humanizer.resources.dll">
+      <PackagePath>sv\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.tr\2.5.1\lib\netstandard2.0\tr\Humanizer.resources.dll">
+      <PackagePath>tr\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.uk\2.5.1\lib\netstandard2.0\uk\Humanizer.resources.dll">
+      <PackagePath>uk\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.uz-cyrl-uz\2.5.1\lib\netstandard2.0\uz-Cyrl-UZ\Humanizer.resources.dll">
+      <PackagePath>uz-Cyrl-UZ\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.uz-latn-uz\2.5.1\lib\netstandard2.0\uz-Latn-UZ\Humanizer.resources.dll">
+      <PackagePath>uz-Latn-UZ\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.vi\2.5.1\lib\netstandard2.0\vi\Humanizer.resources.dll">
+      <PackagePath>vi\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.zh-cn\2.5.1\lib\netstandard2.0\zh-CN\Humanizer.resources.dll">
+      <PackagePath>zh-CN\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.zh-hans\2.5.1\lib\netstandard2.0\zh-Hans\Humanizer.resources.dll">
+      <PackagePath>zh-Hans\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core.zh-hant\2.5.1\lib\netstandard2.0\zh-Hant\Humanizer.resources.dll">
+      <PackagePath>zh-Hant\Humanizer.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\psc.xamarin.mvvmhelpers\1.0.0\lib\portable45-net45+win8+wp8+wpa81\PSC.Xamarin.MvvmHelpers.dll">
+      <PackagePath>PSC.Xamarin.MvvmHelpers.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
@@ -519,6 +645,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\xam.plugins.forms.imagecircle\3.0.0.5\lib\uap10.0.16299\ImageCircle.Forms.Plugin.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>

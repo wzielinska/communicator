@@ -25,3 +25,6 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
+ImageCircle.Forms.Plugin
+Humanizer
+PSC.Xamarin.MvvmHelpers
