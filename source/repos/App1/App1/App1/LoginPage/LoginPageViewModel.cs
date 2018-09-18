@@ -36,8 +36,7 @@ namespace App1
             {
                 return new Command(() =>
                 {
-                    //OnLogin();
-                    if (OnLogin()) ExecuteGoToMessengerPage();
+                    OnLogin();
                 });
             }
         }
@@ -48,7 +47,7 @@ namespace App1
             {
                 return new Command(() =>
                 {
-                    if (OnRegister()) ExecuteGoToMessengerPage();
+                    OnRegister();
                 });
             }
         }
@@ -60,7 +59,6 @@ namespace App1
                 return new Command(() =>
                 {
                     OnLogout();
-                    ExecuteGoBackToLoginPage();
                 });
             }
         }
@@ -233,31 +231,60 @@ namespace App1
 
         void _LoginOK(object sender, EventArgs e)
         {
-            //ExecuteGoToMessengerPage();
-
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                ExecuteGoToMessengerPage();
+            });
         }
 
         void _RegisterOK(object sender, EventArgs e)
         {
-            //ExecuteGoToMessengerPage();
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                ExecuteGoToMessengerPage();
+            });
         }
 
         void _LoginFailed(object sender, ErrorEventArgs e)
         {
-            //if (e.Error == ErrorEvent.WrongPassword) DisplayWrongPassword();
-            //else if (e.Error == ErrorEvent.NoExists) DisplayUserNoExist();
-            //else DisplayInvalidLoginPrompt();
+            if (e.Error == ErrorEvent.WrongPassword)
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    DisplayWrongPassword();
+                });  
+            }
+            else if (e.Error == ErrorEvent.NoExists)
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    DisplayUserNoExist();
+                });
+            }
+            else Device.BeginInvokeOnMainThread(() =>
+            {
+                DisplayInvalidLoginPrompt();
+            });
         }
 
         void _RegisterFailed(object sender, ErrorEventArgs e)
         {
-            //if (e.Error == ErrorEvent.Exists) DisplayUserExist();
-            //else DisplayInvalidRegisterPrompt();
+            if (e.Error == ErrorEvent.Exists) Device.BeginInvokeOnMainThread(() =>
+            {
+                DisplayUserExist();
+            });
+            else Device.BeginInvokeOnMainThread(() =>
+            {
+                DisplayInvalidRegisterPrompt();
+            });
         }
 
         private void _Disconnected(object sender, EventArgs e)
         {
-            //ExecuteGoBackToLoginPage();
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                ExecuteGoBackToLoginPage();
+            });
         }
 
         private void ExecuteGoToChatPage()

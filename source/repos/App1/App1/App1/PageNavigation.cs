@@ -36,9 +36,9 @@ namespace App1
             });
         }
 
-        public async void GoToMessenger(object bindingContext)
+        public void GoToMessenger(object bindingContext)
         {
-           await  Application.Current.MainPage.Navigation.PushAsync(new MessengerPage_.MessengerPage() {
+           Application.Current.MainPage.Navigation.PushAsync(new MessengerPage_.MessengerPage() {
                 BindingContext = bindingContext
             });
         }

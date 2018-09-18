@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1.Cells;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;

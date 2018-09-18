@@ -4,8 +4,10 @@
              x:Class="App1.ChatPage_.ChatPage">
   <ContentPage.Content>
       <StackLayout BackgroundColor="Azure">
-          <ListView x:Name="MessagesListView" HasUnevenRows="True" SeparatorVisibility="None" 
-            <Button Command="{Binding GoBackToMessengerPageCommand}" Text="Back" TextColor="White" 
+            <ListView x:Name="MessagesListView" HasUnevenRows="True" SeparatorVisibility="None" >
+                
+            </ListView>
+            <Button x:Name="BackToMessengerBtN" Command="{Binding GoBackToMessengerPageCommand}" Text="Back" TextColor="White" 
                         FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
                         BackgroundColor="#088da5"/>
         </StackLayout>
