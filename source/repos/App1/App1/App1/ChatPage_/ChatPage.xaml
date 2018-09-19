@@ -8,7 +8,7 @@
             <local:DataTemplateSelectorChat x:Key="MessageTemplateSelector"/>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <Grid RowSpacing="0" ColumnSpacing="0">
+    <Grid RowSpacing="0" ColumnSpacing="0" BackgroundColor="Azure">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
@@ -17,7 +17,7 @@
                   HasUnevenRows="True" 
                   SeparatorVisibility="None"
                   ItemTemplate="{StaticResource MessageTemplateSelector}"
-                  ItemsSource="Binding Messages"/>
+                  ItemsSource="{Binding Messages}"/>
         <StackLayout Orientation="Horizontal" Grid.Row="1" Padding="10" BackgroundColor="Azure">
             <Entry HorizontalOptions="FillAndExpand" HeightRequest="25" Placeholder="Message" Text="{Binding OutgoingText}"/>
             <Button Text="Send" Command="{Binding SendCommand}" TextColor="White" 

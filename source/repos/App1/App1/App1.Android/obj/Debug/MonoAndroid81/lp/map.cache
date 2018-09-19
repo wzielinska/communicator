@@ -1,5 +1,8 @@
 App1
 FormsViewGroup
+Humanizer
+ImageCircle.Forms.Plugin
+PSC.Xamarin.MvvmHelpers
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -25,6 +28,4 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
-ImageCircle.Forms.Plugin
-Humanizer
-PSC.Xamarin.MvvmHelpers
+System.Resources.ResourceManager

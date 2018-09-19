@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-hu"
+"ResourceDimensions"		"language-hu"
+
+[Files]
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x64\Debug\split.language-hu.pri"			"resources.pri"

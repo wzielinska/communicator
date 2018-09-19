@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
-    <PackageIdentityPublisher>CN=dbb68a80-6790-474c-9d7d-c8ef643bee4e</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=mariu</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

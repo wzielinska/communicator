@@ -13,7 +13,7 @@ namespace App1
 
         void GoToMessenger(object bindingContext);
 
-        void GoToChat(object bindingContext);
+        void GoToChat(object bindingContext, string receiver);
 
         void GoBackToMessenger();
 

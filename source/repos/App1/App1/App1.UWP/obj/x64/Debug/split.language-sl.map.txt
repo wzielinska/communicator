@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-sl"
+"ResourceDimensions"		"language-sl"
+
+[Files]
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x64\Debug\split.language-sl.pri"			"resources.pri"

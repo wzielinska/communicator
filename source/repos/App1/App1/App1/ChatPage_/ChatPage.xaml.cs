@@ -13,10 +13,10 @@ namespace App1.ChatPage_
 	public partial class ChatPage : ContentPage
 	{
         LoginPageViewModel vm;
-		public ChatPage ()
+		public ChatPage (string receiver)
 		{
 			InitializeComponent ();
-            Title = "ktoś tam";
+            Title = receiver;
             BindingContext = vm = new LoginPageViewModel();
 
             vm.Messages.CollectionChanged += (sender, e) =>

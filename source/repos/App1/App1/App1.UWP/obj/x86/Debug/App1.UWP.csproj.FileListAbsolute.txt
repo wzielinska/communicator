@@ -899,3 +899,4 @@ C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x86\Debug\
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x86\Debug\resources.en.resfiles
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x86\Debug\ImageCircle.Forms.Plugin.pri.xml
+C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\ForBundle\AppxManifest.xml

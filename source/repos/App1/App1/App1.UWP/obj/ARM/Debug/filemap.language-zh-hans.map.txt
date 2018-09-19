@@ -1,0 +1,9 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-zh-hans"
+"ResourceDimensions"		"language-zh-cn"
+"ResourceDimensions"		"language-zh-hans"
+
+[Files]
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\ARM\Debug\filemap.language-zh-hans.pri"			"resources.pri"
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\ARM\Debug\PackageLayout\zh-Hans\Humanizer.resources.dll"			"zh-Hans\Humanizer.resources.dll"
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\ARM\Debug\PackageLayout\zh-CN\Humanizer.resources.dll"			"zh-CN\Humanizer.resources.dll"

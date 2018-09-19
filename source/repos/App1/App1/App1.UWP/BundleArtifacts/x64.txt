@@ -1,0 +1,2 @@
+MainPackage=C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x64\Debug\App1.UWP_1.0.2.0_x64_Debug.appx
+SymbolPackage=C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\AppPackages\App1.UWP_1.0.2.0_Debug_Test\App1.UWP_1.0.2.0_x64_Debug.appxsym

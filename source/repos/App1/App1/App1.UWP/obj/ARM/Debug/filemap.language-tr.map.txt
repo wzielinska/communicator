@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-tr"
+"ResourceDimensions"		"language-tr"
+
+[Files]
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\ARM\Debug\filemap.language-tr.pri"			"resources.pri"
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\ARM\Debug\PackageLayout\tr\Humanizer.resources.dll"			"tr\Humanizer.resources.dll"

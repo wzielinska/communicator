@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-zh-hant"
+"ResourceDimensions"		"language-zh-hant"
+
+[Files]
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\ARM\Debug\filemap.language-zh-hant.pri"			"resources.pri"
+"C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\ARM\Debug\PackageLayout\zh-Hant\Humanizer.resources.dll"			"zh-Hant\Humanizer.resources.dll"

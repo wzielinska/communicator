@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
-    <PackageIdentityPublisher>CN=dbb68a80-6790-474c-9d7d-c8ef643bee4e</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=mariu</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -19,25 +19,25 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>554F0022DD503FADAC6209E76DE55DD8D07B712A1199E4C1E05A4A77481D1D61</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>41eded5c-c93d-4a4f-bc5f-41b75bb11c1e_1.0.0.0_x86__4e5a131hrc0mm</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>41eded5c-c93d-4a4f-bc5f-41b75bb11c1e_4e5a131hrc0mm!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>577C02D1D6351D71051C68472191D4BB74285C06ECBAC4FC80496D08D4BE3827</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>41eded5c-c93d-4a4f-bc5f-41b75bb11c1e_1.0.6.0_x86__3qfwvwza3ecdg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>41eded5c-c93d-4a4f-bc5f-41b75bb11c1e_3qfwvwza3ecdg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>41eded5c-c93d-4a4f-bc5f-41b75bb11c1e</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=dbb68a80-6790-474c-9d7d-c8ef643bee4e</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredPackagePublisher>CN=mariu</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.6.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-18T12:29:12.385</Modified>
+      <Modified>2018-09-19T12:14:13.183</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.exe">
       <PackagePath>entrypoint\App1.UWP.exe</PackagePath>
-      <Modified>2018-09-18T12:29:09.229</Modified>
+      <Modified>2018-09-19T12:14:11.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core\2.5.1\lib\netstandard2.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
@@ -885,7 +885,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll">
       <PackagePath>App1.dll</PackagePath>
-      <Modified>2018-09-18T12:28:59.536</Modified>
+      <Modified>2018-09-19T12:14:03.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -1032,11 +1032,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-09-18T12:29:08.781</Modified>
+      <Modified>2018-09-19T12:14:10.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-09-18T12:29:08.786</Modified>
+      <Modified>2018-09-19T12:14:10.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1093,11 +1093,11 @@
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-18T12:09:10.880</Modified>
+      <Modified>2018-09-19T11:38:49.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\App1.UWP.exe">
       <PackagePath>App1.UWP.exe</PackagePath>
-      <Modified>2018-09-18T12:29:12.348</Modified>
+      <Modified>2018-09-19T12:14:13.164</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

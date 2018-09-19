@@ -28,9 +28,9 @@ namespace App1
             Application.Current.MainPage.Navigation.PopAsync();
         }
 
-        public void GoToChat(object bindingContext)
+        public void GoToChat(object bindingContext, string receiver)
         {
-            Application.Current.MainPage.Navigation.PushAsync(new ChatPage_.ChatPage()
+            Application.Current.MainPage.Navigation.PushAsync(new ChatPage_.ChatPage(receiver)
             {
                 BindingContext = bindingContext
             });

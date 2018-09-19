@@ -25,7 +25,8 @@ namespace App1
             vm.DisplayInvalidRegisterPrompt += () => DisplayAlert("Error", "Invalid Register, try again!", "OK");
             vm.DisplayInvalidChatUserPrompt += () => DisplayAlert("Error", "Choose user!", "OK");
             vm.DisplayNoFriendName += () => DisplayAlert("Error", "Enter Valid Friend's Name!", "OK");
-
+            vm.DisplayRcvMssg += () => DisplayAlert("Message Received", "You Received Message from " + vm.sender , "OK");
+            vm.DisplayUnavailable += () => DisplayAlert("Error", "Username you are trying to reach is currently unavailable!", "OK");
 
             InitializeComponent ();
 

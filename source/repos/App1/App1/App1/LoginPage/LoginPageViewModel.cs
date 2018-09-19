@@ -21,13 +21,12 @@ namespace App1
 
         BKClient client = new BKClient();
 
+
         public Command AddFriend { get; set; }
 
         public Command RemoveFriend { get; set; }
 
         public Command GoBackToMessengerPageCommand { get; set; }
-
-        public Command GoToChatPageCommand { get; set; }
 
         public Command SendCommand { get; set; }
 
@@ -64,6 +63,16 @@ namespace App1
             }
         }
 
+        public ICommand GoToChatPageCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    ExecuteGoToChatPage();
+                });
+            }
+        }
         public Action DisplayInvalidLoginPrompt;
 
         public Action DisplayInvalidConfirmationPrompt;
@@ -80,6 +89,10 @@ namespace App1
 
         public Action DisplayNoFriendName;
 
+        public Action DisplayRcvMssg;
+
+        public Action DisplayUnavailable;
+
         private string _addfriend;
         public string addFriend
         {
@@ -89,6 +102,20 @@ namespace App1
                 if (_addfriend != value)
                 {
                     _addfriend = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string _sender;
+        public string sender
+        {
+            get { return _sender; }
+            set
+            {
+                if (_sender != value)
+                {
+                    _sender = value;
                     OnPropertyChanged();
                 }
             }
@@ -201,8 +228,6 @@ namespace App1
             _navigation = DependencyService.Get<IPageNavigation>();
 
             GoBackToMessengerPageCommand = new Command(ExecuteGoBackToMessengerPage);
-
-            GoToChatPageCommand = new Command(ExecuteGoToChatPage);
             
             AddFriend = new Command(ExecuteAddFriend);
 
@@ -220,9 +245,9 @@ namespace App1
 
             client.Disconnected += new EventHandler(_Disconnected);
 
-           // client.UserAvailable = new AvailableEventHandler(_UserAvailable);
+            client.UserAvailable += new AvailableEventHandler(_UserAvailable);
 
-           // client.MessageReceived = new ReceivedEventHandler(_MessegeReceived);
+            client.MessageReceived += new ReceivedEventHandler(_MessegeReceived);
 
 
         }
@@ -325,12 +350,34 @@ namespace App1
 
         private void _MessegeReceived(object sender, ReceivedEventArgs e)
         {
-            throw new NotImplementedException();
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                _sender = e.Username;
+                if (_sender != _ItemSelected) DisplayRcvMssg();
+                sender = string.Empty;
+            });
+
+            var message = new Message
+            {
+                Text = e.Message,
+                IsIncoming = true,
+                MessageDateTime = DateTime.Now
+            };
+
+            Messages.Add(message);
+
         }
 
         private void _UserAvailable(object sender, AvailableEventArgs e)
         {
-            throw new NotImplementedException();
+            if (e.IsAvailable) Device.BeginInvokeOnMainThread(() =>
+            {
+                _navigation.GoToChat(this, _ItemSelected);
+            });
+            else Device.BeginInvokeOnMainThread(() =>
+            {
+                DisplayUnavailable();
+            });
         }
 
         private void _Disconnected(object sender, EventArgs e)
@@ -343,8 +390,8 @@ namespace App1
 
         private void ExecuteGoToChatPage()
         {
-            if (_ItemSelected != null) _navigation.GoToChat(this);
-            else DisplayInvalidChatUserPrompt();
+            if (_ItemSelected == null) DisplayInvalidChatUserPrompt();
+            else client.IsAvailable(_ItemSelected);
         }
 
         private void ExecuteGoBackToMessengerPage()
@@ -385,7 +432,7 @@ namespace App1
 
             Messages.Add(message);
 
-            //wyslij wiadomosc
+            client.SendMessage(objItemSelected, message.Text);
 
             OutgoingText = string.Empty;
         }
