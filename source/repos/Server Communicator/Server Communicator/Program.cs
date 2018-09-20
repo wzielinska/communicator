@@ -29,7 +29,7 @@ namespace Server_Communicator
         public int port = 1234;
         public bool dziala = true;
         public TcpListener server; //TCP server
-        public X509Certificate2 certyfikat = new X509Certificate2("C:/Users/mariu/Communicator/source/repos/Server Communicator/Server Communicator/server.pfx", "admin");
+        public X509Certificate2 certyfikat = new X509Certificate2(Environment.CurrentDirectory + "\\server.pfx", "admin");
 
         string usersFileName = Environment.CurrentDirectory + "\\users.dat";
 

@@ -50,7 +50,7 @@ namespace Server_Communicator
 
             if (username.Length < 15)
             {
-                if (password.Length < 20) //docelowo bedzie wiecej warunkow bezpicznego hasla
+                if (password.Length == 64) //docelowo bedzie wiecej warunkow bezpicznego hasla
                 {
 
                 }

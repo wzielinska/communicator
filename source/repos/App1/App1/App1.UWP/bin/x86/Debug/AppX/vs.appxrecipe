@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-19T12:14:13.183</Modified>
+      <Modified>2018-09-20T09:37:30.697</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.exe">
       <PackagePath>entrypoint\App1.UWP.exe</PackagePath>
-      <Modified>2018-09-19T12:14:11.410</Modified>
+      <Modified>2018-09-20T09:37:28.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\.nuget\packages\humanizer.core\2.5.1\lib\netstandard2.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
@@ -885,7 +885,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll">
       <PackagePath>App1.dll</PackagePath>
-      <Modified>2018-09-19T12:14:03.433</Modified>
+      <Modified>2018-09-20T09:37:18.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -1032,11 +1032,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-09-19T12:14:10.957</Modified>
+      <Modified>2018-09-20T09:37:27.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-09-19T12:14:10.958</Modified>
+      <Modified>2018-09-20T09:37:27.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1097,7 +1097,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mariu\Desktop\New folder\source\repos\App1\App1\App1.UWP\bin\x86\Debug\Core\App1.UWP.exe">
       <PackagePath>App1.UWP.exe</PackagePath>
-      <Modified>2018-09-19T12:14:13.164</Modified>
+      <Modified>2018-09-20T09:37:30.662</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -5,6 +5,8 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace App1
 {
@@ -203,7 +205,6 @@ namespace App1
             get { return _password; }
             set
             {
-
                 _password = value;
                 OnPropertyChanged(nameof(Password));
             }
@@ -263,7 +264,7 @@ namespace App1
         {
             if (_username != null && _password != null)
             {
-                client.Login(_username, _password);
+                client.Login(_username, Computesha256(_password));
                 return true;
             }
             else
@@ -278,7 +279,7 @@ namespace App1
             if (_username != null && _password != null)
                 if (_password == _confirmpassword)
                 {
-                    client.Register(_username, _password);
+                    client.Register(_username, Computesha256(_password));
                     return true;
                 }
                 else
@@ -435,6 +436,18 @@ namespace App1
             client.SendMessage(objItemSelected, message.Text);
 
             OutgoingText = string.Empty;
+        }
+
+        private string Computesha256(string value)
+        {
+            SHA256 sha256Hash = SHA256.Create();
+            byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(value));
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                builder.Append(bytes[i].ToString("x2"));
+            }
+            return builder.ToString();
         }
 
         #endregion
